@@ -112,19 +112,15 @@ void add_bouncer(bn::vector<Bouncer, MAX_BOUNCERS>& bouncers, bn::fixed start_x,
 
 int main() {
     bn::core::init();
-
-    // Sprites and x speeds of bouncers
-    // Items with the same index correspond to each other
-    // bn::vector<bn::sprite_ptr, MAX_BOUNCERS> sprites = {};
-    // bn::vector<bn::fixed, MAX_BOUNCERS> x_speeds = {};
+    
     bn::vector<Bouncer, MAX_BOUNCERS> bouncers = {};
-    // Bouncer manual = Bouncer(-30, 25);
 
     bn::fixed y_spawn = 0;
     bn::fixed x_spawn = 0;
-
+    bn::random rand;
+    
     while(true) {
-        bn::random rand;
+        
         //if A is pressed add a new bouncer
         if(bn::keypad::a_pressed()) {
            add_bouncer(bouncers, x_spawn, y_spawn, rand);
