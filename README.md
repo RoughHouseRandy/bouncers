@@ -1,4 +1,8 @@
-# Bouncers
-An exercise to learn about functions and classes.
+# Penguin Bouncer
+This game lets you spawn penguins in an arctic landscape.
 
-Please find instructions in [instructions.md](instructions.md).
+# Instructions
+Pressing the A button lets you spawn a penguin with a random speed attached to it. Have fun watching them bounce!
+
+![App demo](mysample.gif)
+
